@@ -32,7 +32,7 @@ $ sudo find /home -mtime 30 -delete
 ## 2. Working with ZIP Files
 ```bash
 # Create zip with txt files
-$ zip telusko.*.txt
+$ zip telusko *.txt
 
 # Display zip content
 $ zip -sf telusko.zip
@@ -44,7 +44,7 @@ $ zip -r telusko.zip alien4.txt
 $ zip -d telusko.zip alien4.txt
 
 # Create password protected zip
-$ zip -e telusko.*.txt
+$ zip -e telusko *.txt
 
 # Extract zip
 $ unzip telusko.zip
@@ -57,7 +57,7 @@ $ rm telusko.zip
 ```bash
 # Check connectivity
 $ ping www.google.com
-$ ping ipconfig
+$ ping ifconfig
 
 # Download files using wget
 $ wget https://wordpress.org/latest.zip
