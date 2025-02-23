@@ -86,7 +86,7 @@ echo "Result of Addition: $((FNUM+SNUM))"
 ## 5. Control Structures
 **Theory:** Control structures help in making decisions and controlling the flow of execution in scripts based on conditions.
 
-### If-Else Statement:
+### If-Else Statement (Number Comparison):
 ```bash
 #!/bin/bash
 
@@ -103,6 +103,24 @@ fi
 ```
 
 **What it does:** Compares two numbers and prints whether they are equal or not.
+
+### If-Elif-Else Statement (Number Type Check):
+```bash
+#!/bin/bash
+
+echo "Enter The Number"
+read NUM1
+
+if [ $NUM1 -gt 0 ]; then
+    echo "Positive Number"
+elif [ $NUM1 -lt 0 ]; then
+    echo "Negative Number"
+else
+    echo "Number is Zero"
+fi
+```
+
+**What it does:** Takes a number as input and determines if it's positive, negative, or zero using if-elif-else construct.
 
 ## 6. Loops
 **Theory:** Loops allow repetitive execution of a set of commands until a specific condition is met.
@@ -205,3 +223,4 @@ sh script_name.sh
 ---
 
 *These notes cover the fundamentals of shell scripting with explanations of what each concept does and how it works. Practice each concept to better understand them.*
+
