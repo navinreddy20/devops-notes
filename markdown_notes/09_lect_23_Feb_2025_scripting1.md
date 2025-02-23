@@ -16,6 +16,11 @@ Shell scripting is a way to automate tasks in Unix/Linux systems. It allows us t
 ## 2. Variables & Input/Output
 **Theory:** Variables store data that can be referenced and manipulated throughout the script. Linux shell supports user input/output operations for interactive scripts.
 
+### Variable Rules
+* ❌ No digits at start
+* ❌ No special characters (., @, $, #)
+* ✅ UPPERCASE names recommended
+
 ### Basic I/O Example:
 ```bash
 #!/bin/bash
@@ -67,6 +72,16 @@ $ unset COURSE
 
 ## 4. Arithmetic Operations
 **Theory:** Shell scripting supports basic arithmetic operations using special syntax. These operations are performed on numeric variables.
+
+### Available Operations:
+| Operation | Syntax |
+|-----------|--------|
+| Addition | `$((num1 + num2))` |
+| Subtraction | `$((num1 - num2))` |
+| Multiplication | `$((num1 * num2))` |
+| Division | `$((num1 / num2))` |
+| Modulus | `$((num1 % num2))` |
+
 
 ### Calculator Example:
 ```bash
@@ -223,4 +238,3 @@ sh script_name.sh
 ---
 
 *These notes cover the fundamentals of shell scripting with explanations of what each concept does and how it works. Practice each concept to better understand them.*
-
