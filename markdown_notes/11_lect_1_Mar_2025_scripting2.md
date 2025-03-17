@@ -1,4 +1,4 @@
-# Shell Scripting-2
+# Shell Scripting - 2
 ## Overview
 Shell scripting allows automation of tasks and efficient execution of commands. This lecture covers:
 - Command-line arguments
