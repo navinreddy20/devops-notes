@@ -29,16 +29,10 @@
 #### Diagram: Ansible Workflow
 ```mermaid
 graph TD
-    Control[Control Node]
-    Playbook[Playbook (YAML)]
-    Web[Web Server EC2]
-    DB[Database EC2]
-    Inventory[Host Inventory File]
-
-    Control --> Playbook
-    Control --> Web
-    Control --> DB
-    Inventory --> Control
+    ControlNode["Control Node"] -->|Runs| PlaybookYAML["Playbook (YAML)"]
+    ControlNode -->|SSH| WebServer["Web Server EC2"]
+    ControlNode -->|SSH| DBServer["Database EC2"]
+    InventoryFile["Host Inventory File"] --> ControlNode
 ```
 
 ---
